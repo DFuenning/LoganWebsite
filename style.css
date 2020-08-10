@@ -1,0 +1,183 @@
+.upperCont {
+    background-color: rgb(22, 0, 104);
+    height: 50px;
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+
+nav {
+    background-color: #ffc000;
+    color: #000;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.nav-link {
+    color: #000000;
+}
+
+
+.slideShow {
+    padding-top: 30px;
+}
+
+#imgOne {
+    /* background-image: url(https://images.unsplash.com/photo-1564182998523-6923112e7d6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-position: left 0px bottom 30px !important;
+}
+
+#imgTwo {
+    /* background-image: url(https://images.unsplash.com/photo-1564182998523-6923112e7d6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80); */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 600px;
+    background-position: left 0px top 50px !important;
+}
+
+#imgThree {
+    /* background-image: url(https://images.unsplash.com/photo-1529479627062-5f1f0b88912a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1975&q=80); */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 600px;
+    background-position: left 0px top 50px !important;
+}
+
+/* 
+.grid {
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 10px;
+    max-width: 1500px;
+    align-items: center;
+    justify-items: center;
+} */
+
+.services-warp {
+    padding-top: 56px;
+    padding-bottom: 30px;
+    max-width: 1227px;
+    margin: auto auto 0;
+    background: #fff;
+    position: relative;
+    -webkit-box-shadow: 0 0 0 #00000075;
+    box-shadow: 0 0 0 #00000075;
+    z-index: 99;
+}
+
+.services-warp:after,
+.services-warp::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    -webkit-box-shadow: 0 -43px 41px rgba(0, 0, 0, 0.48);
+    box-shadow: 0 -43px 41px rgba(0, 0, 0, 0.48);
+}
+
+.services-warp::before {
+    background: #fff;
+    height: 100%;
+    top: -4px;
+    -webkit-box-shadow: 0 0 0 #000;
+    box-shadow: 0 0 0 #000;
+    border-top: 4px solid #ffc000;
+    z-index: -1;
+}
+
+.service-item {
+    margin-bottom: 55px;
+    padding-right: 20px;
+}
+
+.service-item .si-head {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+
+.service-item .si-icon {
+    float: left;
+    width: 61px;
+}
+
+.si-icon img {
+    height: 40px;
+    width: 40px;
+}
+
+.service-item h5 {
+    overflow: hidden;
+    padding-top: 12px;
+}
+
+.service-item p {
+    margin-bottom: 0;
+}
+
+/* ----------------
+  Features Section
+  ---------------------*/
+
+.features-section {
+    padding-bottom: 73px;
+    background: url(images/heroSect.jpg);
+}
+
+.feature-box {
+    margin-bottom: 30px;
+}
+
+.feature-box .fb-text {
+    padding: 50px 27px 43px;
+    background: #fff;
+}
+
+.feature-box img {
+    width: 350px;
+    height: 320px;
+}
+
+.feature-box h5 {
+    margin-bottom: 30px;
+}
+
+.feature-box p {
+    margin-bottom: 25px;
+}
+
+.feature-box .fb-more-btn {
+    display: inline-block;
+    color: #ffc000;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 2px solid #ffc000;
+    padding: 15px;
+    min-width: 128px;
+    text-align: center;
+}
+
+.feature-box .fb-more-btn:hover {
+    background: #ffc000;
+    color: #fff;
+}
