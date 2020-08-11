@@ -8,8 +8,180 @@
 
 
 
+/*------------------
+ Header section
+  ---------------------*/
 
-nav {
+
+
+.site-logo {
+    display: inline-block;
+    margin-right: 10px;
+    padding-left: 63px;
+}
+
+.site-logo img {
+    height: 80%;
+    width: 80%;
+}
+
+.hib-icon img {
+    height: 40px;
+    width: 35px;
+}
+
+
+.header-right {
+    float: right;
+    padding-right: 83px;
+    position: relative;
+}
+
+.header-info-box {
+    display: inline-block;
+    margin-right: 40px;
+    padding: 21px 0 15px;
+}
+
+.header-info-box .hib-icon {
+    float: left;
+    margin-right: 13px;
+}
+
+.header-info-box .hib-text {
+    overflow: hidden;
+}
+
+.header-info-box .hib-text h6 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.header-info-box .hib-text p {
+    margin-bottom: 0;
+}
+
+.search-switch {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 83px;
+    height: 100%;
+    max-height: 86px;
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    background: #ffc000;
+}
+
+.search-switch-warp {
+    padding-top: 20px;
+}
+
+.search-switch-warp .search-switch {
+    display: block;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.site-nav-menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.site-navbar {
+    border-bottom: solid 2px #ffc000;
+}
+
+.site-nav-menu ul {
+    list-style: none;
+}
+
+.site-nav-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.site-nav-menu ul li a {
+    display: block;
+    padding: 32px 16px;
+    margin-right: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #081624;
+    position: relative;
+}
+
+.site-nav-menu ul li a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 7px;
+    left: 0;
+    bottom: 0;
+    background: #ffc000;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.site-nav-menu ul li .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 50px;
+    padding: 15px 0 10px;
+    text-align: left;
+    -webkit-box-shadow: 0 15px 50px 1px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 15px 50px 1px rgba(0, 0, 0, 0.13);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.site-nav-menu ul li .sub-menu li {
+    display: block;
+}
+
+.site-nav-menu ul li .sub-menu li a {
+    padding: 8px 25px;
+    text-transform: none;
+    margin-right: 0;
+}
+
+.site-nav-menu ul li .sub-menu li a:hover {
+    color: #ffc000;
+}
+
+.site-nav-menu ul li .sub-menu li a:after {
+    display: none;
+}
+
+.site-nav-menu ul li:hover a:after {
+    width: 100%;
+}
+
+.site-nav-menu ul li:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+    z-index: 99;
+}
+
+.site-nav-menu ul li.active a:after {
+    width: 100%;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+/* nav {
     background-color: #ffc000;
     color: #000;
 
@@ -25,7 +197,7 @@ nav ul {
 
 .nav-link {
     color: #000000;
-}
+} */
 
 
 .slideShow {
@@ -151,6 +323,7 @@ nav ul {
 .feature-box .fb-text {
     padding: 50px 27px 43px;
     background: #fff;
+    text-align: center;
 }
 
 .feature-box img {
@@ -168,7 +341,7 @@ nav ul {
 
 .feature-box .fb-more-btn {
     display: inline-block;
-    color: #ffc000;
+    color: #000;
     font-size: 12px;
     text-transform: uppercase;
     border: 2px solid #ffc000;
@@ -180,4 +353,329 @@ nav ul {
 .feature-box .fb-more-btn:hover {
     background: #ffc000;
     color: #fff;
+}
+
+/* ----------------
+  Mission Section
+  ---------------------*/
+
+.mission {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+}
+
+#center {
+
+    text-align: center;
+    justify-content: center;
+}
+
+.missionHead {
+    font-weight: bolder;
+    padding-bottom: 50px;
+}
+
+.missionP {
+    color: rgb(80, 80, 80);
+    font-style: italic;
+    font-size: 1.5em;
+    padding-bottom: 150px;
+}
+
+/* ------------------------
+  Call to action section
+ ------------------------*/
+
+.cta-section {
+    padding: 33px 0;
+    background: #ffc000;
+}
+
+.cta-section h2 {
+    color: #fff;
+    font-size: 37px;
+    font-weight: 300;
+}
+
+.site-btn {
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 186px;
+    padding: 23px 47px;
+    text-transform: uppercase;
+    background: #ffc000;
+    color: #fff;
+    line-height: normal;
+    cursor: pointer;
+    text-align: center;
+}
+
+.site-btn:hover {
+    color: #fff;
+}
+
+.site-btn.sb-dark {
+    color: #fff;
+    background: #081624;
+}
+
+/* ----------------
+  Footer Section
+ ---------------------*/
+
+.footer-section {
+    background: #0e2b43;
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+
+.footer-widget {
+    margin-bottom: 40px;
+}
+
+.footer-widget.about-widget {
+    padding-right: 15px;
+}
+
+.footer-widget.about-widget img {
+    margin-bottom: 40px;
+}
+
+.footer-widget.about-widget p {
+    margin-bottom: 35px;
+}
+
+.footer-widget .fw-title {
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.footer-widget ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-widget ul li a {
+    display: block;
+    font-size: 14px;
+    color: #718090;
+    margin-bottom: 15px;
+}
+
+.footer-widget .footer-search {
+    position: relative;
+}
+
+.footer-widget .footer-search input {
+    width: 100%;
+    height: 47px;
+    padding-right: 47px;
+    padding-left: 22px;
+    font-size: 12px;
+    color: #718090;
+    font-style: italic;
+    border: none;
+    background: #0e2b43;
+}
+
+.footer-widget .footer-search button {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    color: #ffc000;
+    font-size: 12px;
+    border: none;
+    background: transparent;
+}
+
+.footer-social a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 41px;
+    height: 41px;
+    color: #fff;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    border-radius: 13px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #39334f;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.footer-social a:hover {
+    background: #ffc000;
+}
+
+.footer-info-box {
+    margin-bottom: 30px;
+}
+
+.footer-info-box .fib-icon {
+    float: left;
+    width: 48px;
+    padding-top: 8px;
+}
+
+.footer-info-box .fib-text {
+    overflow: hidden;
+}
+
+.footer-info-box .fib-text p {
+    margin-bottom: 0;
+}
+
+.footer-buttom {
+    margin-top: 55px;
+    background: #03031b;
+}
+
+.copyright {
+    color: #646470;
+    font-size: 14px;
+    padding-top: 25px;
+}
+
+.copyright a {
+    color: #718090;
+    text-decoration: underline;
+}
+
+.copyright a:hover {
+    color: #ffc000;
+}
+
+.footer-menu {
+    list-style: none;
+    text-align: right;
+}
+
+.footer-menu li {
+    display: inline-block;
+}
+
+.footer-menu li a {
+    display: block;
+    padding: 21px 17px;
+    margin-left: 13px;
+    font-size: 15px;
+    color: #646470;
+    position: relative;
+}
+
+.footer-menu li a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background: #ffc000;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.footer-menu li:hover a:after,
+.footer-menu li.active a:after {
+    width: 100%;
+}
+
+.fib-icon img {
+    height: 40px;
+    width: 35px;
+}
+
+.footer-widget img {
+    padding-top: 10px;
+    height: 80%;
+    width: 80%;
+}
+
+.footer-widget p {
+    color: #718090;
+}
+
+
+/* SOLUTIONS PAGE */
+
+.reserch-section {
+    background: #0e2b43;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+
+.tab-content {
+    color: #fff;
+}
+
+.reserch-tab-menu {
+    display: block;
+    border-bottom: none;
+}
+
+.reserch-tab-menu li.nav-item {
+    display: block;
+}
+
+.reserch-tab-menu li.nav-item a.nav-link {
+    display: block;
+    padding: 15px 29px;
+    margin-bottom: 8px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.45;
+    border-radius: 0;
+    background: #304a5f;
+}
+
+.reserch-tab-menu li.nav-item a.nav-link.active {
+    background: #ffc000;
+}
+
+.reserch-tab {
+    margin-bottom: 70px;
+}
+
+.reserch-tab h2 {
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.reserch-tab p {
+    margin-bottom: 30px;
+}
+
+.reserch-text {
+    margin-bottom: 60px;
+}
+
+.reserch-text h5 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.reserch-info-warp {
+    padding-top: 36px;
+}
+
+.reserch-info-warp .info-box {
+    margin-top: 36px;
 }
