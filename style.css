@@ -320,6 +320,10 @@ nav ul {
     color: #ffc000;
 }
 
+.fa-map-marker {
+    color: #ffc000;
+}
+
 .feature-box {
     margin-bottom: 30px;
 }
@@ -877,4 +881,64 @@ nav ul {
 
 form label {
     margin-bottom: 20px;
+}
+
+/* about page */
+.about-section {
+    margin-left: 8%;
+    margin-right: 8%;
+    /* height: 600px; */
+    
+}
+
+.about-text {
+    padding-right: 2%;
+    padding-top: 70px;
+}
+.about-text h2 {
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    line-height: 2.2;
+    margin-bottom: 35px;
+}
+
+.parallax {
+    background-image: url("images/parallaxSM.jpg");
+   
+    height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: right 0px; 
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+/* application form  */
+
+.openPos {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+
+.openPos p {
+    text-align: center;
+}
+
+.employment {
+    margin-bottom: 35px;
+}
+
+
+#btnSubmit {
+    text-align: center;
+}
+
+legend {
+    text-align: center;
+    padding-bottom: 25px;
 }

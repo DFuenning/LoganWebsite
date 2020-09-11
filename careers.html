@@ -3,74 +3,407 @@
 <html class="zxx">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Logan Machine Co.</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Logan Machine Co.</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+
 
 	<!-- Google font -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/magnific-popup.css"/>
-	<link rel="stylesheet" href="css/slicknav.min.css"/>
-    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
-    
-    <!-- Custom Style Sheet -->
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/slicknav.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+	<!-- Custom Style Sheet -->
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+	<header>
 
-        <!--/.Navbar-->
-        <div class="site-navbar">
-            <!-- Logo -->
-            <a href="index.html" class="site-logo">
-                <img src="images/logo.png" alt="">
-            </a>
-            <div class="header-right">
-                <div class="header-info-box">
-                    <div class="hib-icon">
-                        <i class="fa fa-phone"></i>
-                        <img src="images/phoneYel.png" alt="" class="">
-                    </div>
-                    <div class="hib-text">
-                        <h6>+1 (330) 633-6163</h6>
-                        <p>Logan@Logan.com</p>
-                    </div>
-                </div>
-                <div class="header-info-box">
-                    <div class="hib-icon">
-                        <img src="images/pinYel.png" alt="" class="">
-                    </div>
-                    <div class="hib-text">
-                        <h6>1405 Home Ave</h6>
-                        <p>Akron, OH 44310</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Menu -->
-            <nav class="site-nav-menu">
-                <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+		<!--/.Navbar-->
+		<div class="site-navbar">
+			<!-- Logo -->
+			<a href="index.html" class="site-logo">
+				<img src="images/logo.png" alt="">
+			</a>
+			<div class="header-right">
+				<div class="header-info-box">
+					<div class="hib-icon">
+						<i class="fa fa-phone pt-2" style="font-size: 30px"></i>
+						<!-- <img src="images/phoneYel.png" alt="" class=""> -->
+					</div>
+					<div class="hib-text">
+						<h6>+1 (330) 633-6163</h6>
+						<p>Logan@Logan.com</p>
+					</div>
+				</div>
+				<div class="header-info-box">
+					<div class="hib-icon">
+						<i class="fa fa-map-marker pt-2" style="font-size: 35px;" aria-hidden="true"></i>
+					</div>
+					<div class="hib-text">
+						<h6>1405 Home Ave</h6>
+						<p>Akron, OH 44310</p>
+					</div>
+				</div>
+			</div>
+			<!-- Menu -->
+			<nav class="site-nav-menu">
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="services.html">Our Services</a></li>
+					<li><a href="careers.html">Careers</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
 
-        </div>
+		</div>
 
-    </header>
-   
-<h1 class="mt-5 mb-5">COMING SOON</h1>
+	</header>
+	<section class="openPos">
+		<div class="container">
+			<div class="row">
+				<div class="col-10">
+					<div class="card">
+						<legend>Current Openings</legend>
+						<p>No Positions Available, Check Back Soon!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="employment">
+		<div class="container" id=empCard>
+			<div class="row">
+				<div class="col-10">
+					<div class="card" id="appCard">
+						<form class="form-horizontal">
+							<fieldset>
+
+								<!-- Form Name -->
+								<legend>Employment Opportunities</legend>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<div class="row">
+										<label class="col-md-6 control-label" for="textinput">* Name</label>
+										<div class="col-md-6">
+											<input id="textinput" name="textinput" type="text" placeholder="Name"
+												class="form-control input-md">
+										</div>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textinput">* Address</label>
+										<div class="col-md-6">
+											<input id="textinput" name="textinput" type="text" placeholder="Address"
+												class="form-control input-md">
+
+										</div>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textinput">*City, State, Zip</label>
+										<div class="col-md-6">
+											<input id="textinput" name="textinput" type="text"
+												placeholder="City, State, Zip" class="form-control input-md">
+
+										</div>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textinput"> Position Desired</label>
+										<div class="col-md-6">
+											<input id="textinput" name="textinput" type="text"
+												placeholder="Position Desired" class="form-control input-md">
+
+										</div>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textinput"> Date Available</label>
+										<div class="col-md-6">
+											<input id="textinput" name="textinput" type="text"
+												placeholder="Date Available" class="form-control input-md">
+
+										</div>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textinput">Salary Desired</label>
+										<div class="col-md-6">
+											<input id="textinput" name="textinput" type="text"
+												placeholder="Salary Desired" class="form-control input-md">
+
+										</div>
+									</div>
+								</div>
+
+								<!-- Text input
+								<div class="form-group">
+									<div class="row">
+
+									<label class="col-md-6 control-label" for="textinput">Text Input</label>
+									<div class="col-md-6">
+										<input id="textinput" name="textinput" type="text" placeholder="placeholder"
+											class="form-control input-md">
+										
+									</div>
+								</div>
+								</div> -->
+
+								<!-- Multiple Checkboxes (inline) -->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="checkboxes">Shift Desired</label>
+										<div class="col-md-6">
+											<label class="checkbox-inline" for="checkboxes-0">1st Shift
+												<input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+
+											</label>
+											<label class="checkbox-inline" for="checkboxes-1">2nd Shift
+												<input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+
+											</label>
+
+										</div>
+									</div>
+								</div>
+								<!-- Multiple Radios -->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="radios">Have you ever been convicted
+											of a felony, which has not been annulled, expunged, or sealed by the court?
+											(A "Yes" answer will NOT automatically disqualify you from
+											consideraiton)</label>
+										<div class="col-md-6">
+											<div class="radio">
+												<label for="radios-0">
+													<input type="radio" name="radios" id="radios-0" value="1"
+														checked="checked">
+													Yes
+												</label>
+											</div>
+											<div class="radio">
+												<label for="radios-1">
+													<input type="radio" name="radios" id="radios-1" value="2">
+													No
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Textarea -->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textarea">If you answered "Yes"
+											above, please provide details.</label>
+										<div class="col-md-6">
+											<textarea class="form-control" id="textarea"
+												name="textarea">Provide Details</textarea>
+										</div>
+									</div>
+								</div>
+
+								<!-- Button Drop Down -->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textinput">Select highest level
+											of education attained</label>
+
+										<div class="col-md-6">
+											<select class="form-control" id="exampleFormControlSelect1">
+												<option>Grade School (1st-8th)</option>
+												<option>Some High School</option>
+												<option>High School Graduate</option>
+
+												<option>Some College</option>
+												<option>College Graduate</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+
+
+								<!-- Button Drop Down -->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textinput">Did you recieve
+											your:</label>
+
+										<div class="col-md-6">
+											<select class="form-control" id="exampleFormControlSelect1">
+												<option>G.E.D.</option>
+												<option>Diploma</option>
+												<option>Trade School Certification</option>
+												<option>Neither</option>
+
+											</select>
+										</div>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textinput">High School
+											Attended</label>
+										<div class="col-md-6">
+											<input id="textinput" name="textinput" type="text"
+												placeholder="High School Name" class="form-control input-md">
+
+										</div>
+									</div>
+								</div>
+
+								<!-- Textarea -->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textarea">List schools attended other
+											than High School. <br> Include city, state, and courses studied.</label>
+										<div class="col-md-6">
+											<textarea class="form-control" id="textarea"
+												name="textarea">List Schools</textarea>
+										</div>
+									</div>
+								</div>
+
+								<!-- Multiple Radios -->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="radios">Are you now, or have you ever
+											been a member of the Armed Forces of the United States?</label>
+										<div class="col-md-6">
+											<div class="radio">
+												<label for="radios-0">
+													<input type="radio" name="radios" id="radios-0" value="1"
+														checked="checked">
+													Yes
+												</label>
+											</div>
+											<div class="radio">
+												<label for="radios-1">
+													<input type="radio" name="radios" id="radios-1" value="2">
+													No
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Textarea -->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textarea">List, beginning with the
+											most recent, all present and previous employment, including employer phone
+											number, dates of employment, and position you held. Also, explain the reason
+											you left employment, salary, and a brief description of duties.</label>
+										<div class="col-md-6">
+											<textarea class="form-control" id="textarea"
+												name="textarea">List previous work info</textarea>
+										</div>
+									</div>
+								</div>
+
+								<!-- Textarea -->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textarea">Please provide three
+											references of people who are not related to you including name and either a
+											phone number or email address.</label>
+										<div class="col-md-6">
+											<textarea class="form-control" id="textarea"
+												name="textarea">References</textarea>
+										</div>
+									</div>
+								</div>
+
+								<!-- Text input-->
+								<div class="form-group">
+									<div class="row">
+
+										<label class="col-md-6 control-label" for="textinput">Application Date</label>
+										<div class="col-md-6">
+											<input id="textinput" name="textinput" type="text" placeholder="mm/dd/yyyy"
+												class="form-control input-md">
+
+										</div>
+									</div>
+								</div>
+								<div class="form-group" id="btnSubmit">
+									<div class="row">
+										<div class="col">
+											<div class="submitBtn">
+												<button class="btn-success">Submit</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+
+										<div class="col" style="text-align: center; ;">
+											<i>Logan Machine Company is an equal opportunity employer. All applicants
+												will be considered for employment without
+												attention to race, color, religion, sex, sexual orientation, gender
+												identity, national origin, veteran or
+												disability status.</i>
+
+										</div>
+									</div>
+								</div>
+
+							</fieldset>
+						</form>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
 
 	<!-- Footer section -->
 	<footer class="footer-section spad">
@@ -79,7 +412,9 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-widget about-widget">
 						<img src="images/logo.png" alt="">
-						<p>Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. Donec consequat arcu et commodo interdum. </p>
+						<p>Lorem ipsum dolor sit amet, consec-tetur adipiscing elit. Quisque orci purus, sodales in est
+							quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. Donec consequat arcu et
+							commodo interdum. </p>
 						<div class="footer-social">
 							<a href=""><i class="fa fa-facebook"></i></a>
 							<a href=""><i class="fa fa-twitter"></i></a>
@@ -94,7 +429,7 @@
 						<ul>
 							<li><a href="">Jobs Vacancies</a></li>
 							<li><a href="">Client Testimonials</a></li>
-							<li><a href="">Green  Energy</a></li>
+							<li><a href="">Green Energy</a></li>
 							<li><a href="">Chemical Research</a></li>
 							<li><a href="">Oil Extractions</a></li>
 							<li><a href="">About our Work</a></li>
@@ -107,7 +442,7 @@
 						<ul>
 							<li><a href="">Metal Industry</a></li>
 							<li><a href="">Agricultural Engineering</a></li>
-							<li><a href="">Green  Energy</a></li>
+							<li><a href="">Green Energy</a></li>
 							<li><a href="">Chemical Research</a></li>
 							<li><a href="">Oil Extractions</a></li>
 							<li><a href="">Manufactoring</a></li>
@@ -121,17 +456,17 @@
 							<div class="fib-icon">
 								<img src="images/pinYel.png" alt="" class="">
 							</div>
-                            <div class="fib-text">
-                                <p>1405 Home Ave,<br />Akron, OH 44310</p>
-                              </div>
-                            </div>
-                            <div class="footer-info-box">
-                              <div class="fib-icon">
-                                <img src="images/phoneYel.png" alt="" class="" />
-                              </div>
-                              <div class="fib-text">
-                                <p>+1 (330) 633-6163<br />logan@logan.com</p>
-                              </div>
+							<div class="fib-text">
+								<p>1405 Home Ave,<br />Akron, OH 44310</p>
+							</div>
+						</div>
+						<div class="footer-info-box">
+							<div class="fib-icon">
+								<img src="images/phoneYel.png" alt="" class="" />
+							</div>
+							<div class="fib-text">
+								<p>+1 (330) 633-6163<br />logan@logan.com</p>
+							</div>
 						</div>
 						<form class="footer-search">
 							<input type="text" placeholder="Search">
@@ -143,36 +478,41 @@
 		</div>
 		<div class="footer-buttom">
 			<div class="container">
-			<div class="row">
-				<div class="col-lg-4 order-2 order-lg-1 p-0">
-					<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This site is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="index.html" target="_blank">The Blossom Bro's</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
-				</div>
-				<div class="col-lg-7 order-1 order-lg-2 p-0">
-					<ul class="footer-menu">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">About us</a></li>
-						<li><a href="solutions.html">Solutions</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
+				<div class="row">
+					<div class="col-lg-4 order-2 order-lg-1 p-0">
+						<div class="copyright">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>
+								document.write(new Date().getFullYear());
+							</script> All rights reserved | This site is made with <i class="fa fa-heart-o"
+								aria-hidden="true"></i> by <a href="index.html" target="_blank">The Blossom Bro's</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</div>
+					</div>
+					<div class="col-lg-7 order-1 order-lg-2 p-0">
+						<ul class="footer-menu">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About us</a></li>
+							<li><a href="solutions.html">Solutions</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 	</footer>
 
 
-
-    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/circle-progress.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
-    <script src="script.js" async defer></script>
+	<script src="script.js" async defer></script>
 </body>
 
 </html>
