@@ -25,6 +25,13 @@
     font-size: 14px;
 }
 
+.contact-info {
+    float: left;
+}
+
+.logo {
+    float: left;
+}
 
 #topbar .contact-info a {
     line-height: 1;
@@ -66,12 +73,37 @@
     width: 100px;
 }
 
+@media (max-width: 593px) {
+    .logo {
+        float: none;
+        text-align: center;
+    }
+
+    .nav-menu {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 495px) {
+
+    .nav-menu {
+        float: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
 
 .nav-menu,
 .nav-menu * {
     margin: 0;
     padding: 0;
     list-style: none;
+    float: right;
 }
 
 .nav-menu>ul>li {
@@ -188,11 +220,11 @@
 /* HERO MAIN PAGE */
 #hero {
     width: 100%;
-    height: 60vh;
+    /* height: 60vh; */
     background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/heroSect.jpg") center center;
     background-size: cover;
     position: relative;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 
 #hero:before {
@@ -547,6 +579,8 @@
 
 
 
+
+
 .fa-phone {
     color: #ffc000;
 }
@@ -635,6 +669,7 @@
     color: #fff;
     font-size: 37px;
     font-weight: 300;
+    text-align: center;
 }
 
 .site-btn {
@@ -642,8 +677,8 @@
     border: none;
     font-size: 14px;
     font-weight: 600;
-    min-width: 186px;
-    padding: 23px 47px;
+    min-width: 150px;
+    padding: 13px 27px;
     text-transform: uppercase;
     background: #ffc000;
     color: #fff;
@@ -652,6 +687,10 @@
     text-align: center;
 }
 
+.cta-section #buttonSect {
+    display: flex;
+    justify-content: center;
+}
 .site-btn:hover {
     color: #fff;
 }
@@ -707,14 +746,36 @@
   Footer Section
  ---------------------*/
 
- #footer {
+#footer {
     color: #444444;
     font-size: 14px;
     background: #f1f0f2;
     padding: 10px 0 30px 0;
     margin-top: 30px;
     background: #d0e8fc;
+    
 }
+
+footer .makeBig {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+footer .makeBig {
+    flex-wrap: wrap;
+}
+}
+footer .centerMe {
+    display: flex;
+    justify-content: center;
+}
+.footer-copyright {
+    text-align: center;
+}
+
 /* SOLUTIONS PAGE */
 
 .serveHero {
@@ -920,6 +981,7 @@
 .contact-section {
     padding-top: 50px;
     padding-bottom: 150px;
+    margin-top: 100px;
 }
 
 .contactBtn {
@@ -955,7 +1017,7 @@ form label {
     width: 20%;
     height: 3px;
     background: #005ca8;
-    
+
 }
 
 .MainCont {
@@ -969,12 +1031,13 @@ form label {
     text-align: center;
 }
 
-#chipImg img{
+#chipImg img {
     height: 50vh;
     width: 25vw;
     text-align: center;
     padding-right: 15px;
 }
+
 #chipImg {
     text-align: center;
 }
@@ -1007,6 +1070,7 @@ form label {
 #aboutHeading h1 {
     font-size: 48px;
 }
+
 /* application form  */
 
 .openPos {
