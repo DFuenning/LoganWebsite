@@ -2493,6 +2493,18 @@ html.flexbox {
     margin-bottom: 0;
 }
 
+#width h1::after {
+    content: '';
+    display: block;
+    width: 33%;
+    margin-left: 33%;
+    height: 3px;
+    background: #009ada;
+    
+}
+
+widt
+
 
 .services-warp {
     padding-top: 56px;
@@ -2654,7 +2666,7 @@ html.flexbox {
 
 .cta-section h2 {
     color: #fff;
-    font-size: 37px;
+    font-size: 30px;
     font-weight: 300;
     text-align: center;
 }
@@ -2831,11 +2843,11 @@ footer .centerMe {
 /* SOLUTIONS PAGE */
 
 .serveHero {
-    background-image: url(images/serviceHero.jpg);
-    background-position: center left;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/serveHero.jpg);
+    background-position: 50% 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 300px;
     margin-top: 75px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2844,8 +2856,11 @@ footer .centerMe {
     -ms-flex-align: center;
     align-items: center;
     border-top: 15px solid #009ada;
-    border-bottom: 15px solid #009ada;
+    border-bottom: 5px solid #009ada;
 }
+
+
+
 
 .serveHero h1 {
     color: #fff;
@@ -2866,92 +2881,6 @@ footer .centerMe {
 }
 
 /* SERVICES PAGE */
-
-.reserch-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-}
-
-#border {
-    border: 1px solid rgb(70, 70, 70);
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.tab-content {
-    color: #000;
-}
-
-.reserch-tab-menu {
-    display: block;
-    border-bottom: none;
-}
-
-.reserch-tab-menu li.nav-item {
-    display: block;
-}
-
-
-.reserch-tab-menu li.nav-item a.nav-link {
-    display: block;
-    padding: 15px;
-    color: black;
-    border: none;
-    font-size: 20px;
-    line-height: 1.45;
-    border-radius: 0;
-    text-align: center;
-}
-
-.headingTab {
-    background-color: rgba(160, 160, 160, 0.616);
-    color: #000;
-    padding: 15px;
-
-    text-align: center;
-}
-
-.reserch-tab-menu li.nav-item {
-    border-bottom: 1px solid grey
-}
-
-.reserch-tab-menu li.nav-item a.nav-link.active {
-    background: #009ada;
-}
-
-.reserch-tab {
-    margin-bottom: 70px;
-}
-
-.reserch-tab h2 {
-    font-weight: 300;
-    margin-bottom: 35px;
-}
-
-.reserch-tab p {
-    margin-bottom: 30px;
-}
-
-.reserch-text {
-    margin-bottom: 60px;
-}
-
-.reserch-text h5 {
-    font-size: 20px;
-    margin-bottom: 50px;
-}
-
-.reserch-info-warp {
-    padding-top: 36px;
-}
-
-.reserch-info-warp .info-box {
-    margin-top: 36px;
-}
-
 
 
 /* CONTACT SECTION */
@@ -3184,3 +3113,259 @@ legend {
     text-align: center;
     padding-bottom: 25px;
 }
+
+
+/* MAIN SERVICES PAGE CARDS AND TEXT */
+
+
+/* TEXT SECTION */
+@import url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/library.less");
+@import url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/variables.less");
+
+.container-fluid {
+    width: 100%;
+}
+
+.media {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+mask {
+    padding-top: 0;
+}
+
+figure {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+figure a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+figure:hover .media {
+    transform: scale(1.25);
+}
+
+figcaption {
+    color: #252830;
+    height: calc(100% - 30px);
+    margin: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 250px;
+}
+
+.body {
+    background-color: white;
+    bottom: 0;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+}
+
+svg {
+    height: inherit;
+    width: 100%;
+}
+
+svg text {
+    text-anchor: middle;
+}
+
+svg #alpha {
+    fill: white;
+}
+
+svg .title {
+    font-size: 28px;
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+}
+
+svg #base {
+    fill: white;
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+}
+
+
+figure h1,
+figure p {
+    color: #fff;
+}
+
+figure .col {
+    height: 100%;
+  
+}
+
+figure .col .card-body {
+    height: 100%;
+    vertical-align: middle;
+}
+
+#mediaOne {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(images/clean.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mediaTwo {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(images/cutting.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mediaThree {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(images/inspection.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+figure:hover {
+    border: 5px solid #009ada;
+
+}
+
+
+.serviceIntro {
+    text-align: center;
+    margin: 70px auto;
+}
+
+.serviceIntro h1 {
+    text-transform: uppercase;
+    color: #444;
+    font-weight: lighter;
+}
+
+.serviceIntro p {
+    margin-top: 35px;
+}
+
+
+/* Capabilities page */
+
+.CapeHero {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/capabilities.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-top: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 15px solid #009ada;
+    border-bottom: 5px solid #009ada;
+}
+
+.CapeHero h1, .CapeHero p {
+    color: #fff;
+}
+
+.reserch-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+#border {
+    border: 1px solid rgb(70, 70, 70);
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tab-content {
+    color: #000;
+}
+
+.reserch-tab-menu {
+    display: block;
+    border-bottom: none;
+}
+
+.reserch-tab-menu li.nav-item {
+    display: block;
+}
+
+
+.reserch-tab-menu li.nav-item a.nav-link {
+    display: block;
+    padding: 15px;
+    color: black;
+    border: none;
+    font-size: 20px;
+    line-height: 1.45;
+    border-radius: 0;
+    text-align: center;
+}
+
+.headingTab {
+    background-color: rgba(160, 160, 160, 0.616);
+    color: #000;
+    padding: 15px;
+
+    text-align: center;
+}
+
+.reserch-tab-menu li.nav-item {
+    border-bottom: 1px solid grey
+}
+
+.reserch-tab-menu li.nav-item a.nav-link.active {
+    background: #009ada;
+}
+
+.reserch-tab {
+    margin-bottom: 70px;
+}
+
+.reserch-tab h2 {
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.reserch-tab p {
+    margin-bottom: 30px;
+}
+
+.reserch-text {
+    margin-bottom: 60px;
+}
+
+.reserch-text h5 {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.reserch-info-warp {
+    padding-top: 36px;
+}
+
+.reserch-info-warp .info-box {
+    margin-top: 36px;
+}
+
+
