@@ -11,6 +11,7 @@
     <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 
 
 
@@ -23,22 +24,24 @@
 </head>
 
 <body>
-    <section id="topbar" class="d-none d-lg-block indexTopBar">
+    <section id="topbar" class="d-none d-lg-block">
         <div class="container clearfix">
-            <div class="row">
-                <div class="contact-info float-left">
-                    <div class="col-sm-8 col-md-6">
-                        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@example.com</a>
-                    </div>
-                    <div class="col-sm-8 col-md-6">
-                        <i class="icofont-phone"></i> +1 330 405 4600
-                    </div>
-                </div>
+            <div class="contact-info float-left">
+                <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@example.com</a>
+                <i class="icofont-phone"></i> +1 5589 55488 55
+            </div>
+            <div class="social-links float-right">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="skype"><i class="icofont-skype"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
             </div>
         </div>
-
     </section>
-    <header id="header" class="indexHeader">
+
+    <!-- ======= Header ======= -->
+    <header id="header">
         <div class="container">
 
             <div class="logo float-left">
@@ -49,19 +52,25 @@
                 <ul>
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li class="drop-down"><a href="">Services</a>
+                        <ul>
+                            <li><a href="#">Fabrication</a></li>
+                            <li><a href="#">Turn-Key Solutions</a></li>
+                            <li><a href="#">Abilities</a></li>
+                        </ul>
+                    </li>
                     <li><a href="careers.html">Careers</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
-            </nav>
+            </nav><!-- .nav-menu -->
 
         </div>
-    </header>
+    </header><!-- End Header -->
     <main class="page-body post-6 page type-page status-publish has-post-thumbnail hentry" id="page-body">
         <div class="masthead masthead--slideshow" id="masthead">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12 col-md-9 slider-wrapper">
+                    <div class="col-sm-12 col-md-12 slider-wrapper">
 
                         <section class="slideshow">
                             <div class="royalSlider">
@@ -96,49 +105,54 @@
 
 
                     </div>
-                    <div class="col-md-3 col-sm-12" id="smallMargin">
-                        <ul class="banner-menu">
-                            <li class="col-xs-4 col-sm-4 col-md-12">
-                                <div class="blue-border" id="backOne">
-                                    <div class="pages-featured__imageOne">
-                                    </div>
-                                    <a href="services.html">
-                                        <span class="blue-line"></span>
-                                        <h3>Metal stamping</h3>
-                                        <p>LEARN MORE<span class="icon-arrow"></span></p>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="col-xs-4 col-sm-4 col-md-12">
-                                <div class="blue-border" id="backTwo">
-                                    <div class="pages-featured__imageTwo">
-                                    </div>
-                                    <a href="services.html">
-                                        <span class="blue-line"></span>
-                                        <h3>Tube bending</h3>
-                                        <p>LEARN MORE<span class="icon-arrow"></span></p>
-                                    </a>
-                                </div>
-                            </li>
-
-                            <li class="col-xs-4 col-sm-4 col-md-12">
-                                <div class="blue-border" id="backThree">
-                                    <div class="pages-featured__imageThree">
-                                    </div>
-                                    <a href="services.html">
-                                        <span class="blue-line"></span>
-                                        <h3>Other Services</h3>
-                                        <p>LEARN MORE<span class="icon-arrow"></span></p>
-                                    </a>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
                 </div>
             </div>
-        </div>
+            
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12" id="smallMargin">
+                                <ul class="banner-menu">
+                                    <li class="col-xs-12 col-sm-12 col-md-4">
+                                        <div class="blue-border" id="backOne">
+                                            <div class="pages-featured__imageOne">
+                                            </div>
+                                            <a href="services.html">
+                                                <span class="blue-line"></span>
+                                                <h3>Metal stamping</h3>
+                                                <p>LEARN MORE<span class="icon-arrow"></span></p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="col-xs-12 col-sm-12 col-md-4">
+                                        <div class="blue-border" id="backTwo">
+                                            <div class="pages-featured__imageTwo">
+                                            </div>
+                                            <a href="services.html">
+                                                <span class="blue-line"></span>
+                                                <h3>Tube bending</h3>
+                                                <p>LEARN MORE<span class="icon-arrow"></span></p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="col-xs-12 col-sm-12 col-md-4">
+                                        <div class="blue-border" id="backThree">
+                                            <div class="pages-featured__imageThree">
+                                            </div>
+                                            <a href="services.html">
+                                                <span class="blue-line"></span>
+                                                <h3>Other Services</h3>
+                                                <p>LEARN MORE<span class="icon-arrow"></span></p>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </main>
 
     <!-- ======= About Us Section ======= -->
@@ -187,13 +201,13 @@
     <section class="cta-section">
         <div class="container">
             <div class="row" id="buttonSect">
-                <div class="col-lg-9 d-flex align-items-center">
-                    <h2>We produce or supply Goods & Services</h2>
+                <div class="col-10 d-flex align-items-center">
+                    <h2>Have a project in mind? Request a quote.</h2>
                 </div>
             </div>
             <div class="row" id="buttonSect">
                 <div class="col-lg-3 text-center">
-                    <a href="#" class="site-btn sb-dark">contact us</a>
+                    <a href="#" class="site-btn sb-dark">Request Quote</a>
                 </div>
             </div>
         </div>
@@ -237,93 +251,93 @@
 
 
 
-	<!-- Footer -->
-	<footer class="page-footer footer font-small indigo" id="indexFooter">
+    <!-- Footer -->
+    <footer class="page-footer footer font-small indigo" id="indexFooter">
 
-		<!-- Footer Links -->
-		<div class="container">
+        <!-- Footer Links -->
+        <div class="container">
 
-			<!-- Grid row-->
-			<div class="row text-center d-flex justify-content-center pt-5 mb-3" id="indexFoot">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 mb-3" id="indexFoot">
 
-				<!-- Grid column -->
-				<div class="col-md-2 mb-3">
-					<h6 class="text-uppercase font-weight-bold">
-						<a href="about.html">About us</a>
-					</h6>
-				</div>
-				<!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="about.html">About us</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
 
-				<!-- Grid column -->
-				<div class="col-md-2 mb-3">
-					<h6 class="text-uppercase font-weight-bold">
-						<a href="services.html">Services</a>
-					</h6>
-				</div>
-				<!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="services.html">Services</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
 
-				<!-- Grid column -->
-				<div class="col-md-2 mb-3">
-					<h6 class="text-uppercase font-weight-bold">
-						<a href="careers.html">Careers</a>
-					</h6>
-				</div>
-				<!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="careers.html">Careers</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
 
-				<!-- Grid column -->
-				<div class="col-md-2 mb-3">
-					<h6 class="text-uppercase font-weight-bold">
-						<a href="contact.html">Contact Us</a>
-					</h6>
-				</div>
-				<!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="contact.html">Contact Us</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
 
-				<!-- Grid column -->
-				<div class="col-md-2 mb-3">
-					<h6 class="text-uppercase font-weight-bold">
-						<a href="index.html">To Top</a>
-					</h6>
-				</div>
-				<!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="index.html">To Top</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
 
-			</div>
-			<!-- Grid row-->
-			<hr class="rgba-white-light" style="margin: 0 15%;">
+            </div>
+            <!-- Grid row-->
+            <hr class="rgba-white-light" style="margin: 0 15%;">
 
-			<!-- Grid row-->
-			<div class="row d-flex text-center justify-content-center mb-md-0 mb-4" id="indexFootText">
+            <!-- Grid row-->
+            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4" id="indexFootText">
 
-				<!-- Grid column -->
-				<div class="col-md-8 col-12 mt-5">
-					<p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-						accusantium doloremque laudantium, totam rem
-						aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-						explicabo.
-						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-						consequuntur.</p>
-				</div>
-				<!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-8 col-12 mt-5">
+                    <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur.</p>
+                </div>
+                <!-- Grid column -->
 
-			</div>
-
-
-
-
-		</div>
-		<!-- Grid row-->
+            </div>
 
 
 
-		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">© 2020 Copyright:
-			<a href="#">Trax, Inc.</a>
-		</div>
-		<!-- Copyright -->
 
-	</footer>
-	<!-- Footer -->
+        </div>
+        <!-- Grid row-->
 
-    <script src="script.js"></script>
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#">Trax, Inc.</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -334,6 +348,10 @@
     <script src="vendor/venobox/venobox.min.js"></script>
     <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/jquery-sticky/jquery.sticky.js"></script>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
